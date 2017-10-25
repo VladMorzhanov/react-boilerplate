@@ -116,6 +116,17 @@
         2,
         "always-multiline"
       ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "semi-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true
+        }
+      ],
       "import/imports-first": 0,
       "import/newline-after-import": 0,
       "import/no-dynamic-require": 0,
@@ -138,7 +149,12 @@
       "jsx-a11y/mouse-events-have-key-events": 2,
       "jsx-a11y/role-has-required-aria-props": 2,
       "jsx-a11y/role-supports-aria-props": 2,
-      "max-len": 0,
+      "max-len": [
+        "error",
+        {
+          "code": 90
+        }
+      ],
       "newline-per-chained-call": 0,
       "no-confusing-arrow": 0,
       "no-console": 1,
