@@ -68,10 +68,6 @@ module.exports = (options) => ({
         use: 'html-loader'
       },
       {
-        test: /\.json$/,
-        use: 'json-loader'
-      },
-      {
         test: /\.(mp4|webm)$/,
         use: {
           loader: 'url-loader',
@@ -83,6 +79,10 @@ module.exports = (options) => ({
     ]
   },
   plugins: options.plugins.concat([
+    new webpack.SourceMapDevToolPlugin({
+      filename: '[file].map'
+    }),
+
     new webpack.ProvidePlugin({
       // make fetch available
       fetch: 'exports-loader?self.fetch!whatwg-fetch'

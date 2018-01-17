@@ -52,11 +52,12 @@ module.exports = require('./webpack.base.babel')({
   },
 
   // Add development plugins
-  plugins: dependencyHandlers().concat(plugins), // eslint-disable-line no-use-before-define
+  plugins: dependencyHandlers().concat(plugins),
 
   // Emit a source map for easier debugging
   // See https://webpack.js.org/configuration/devtool/#devtool
-  devtool: 'inline-source-map',
+  // devtool: 'eval-source-map',
+  devtool: 'eval-source-map',
 
   performance: {
     hints: false
@@ -72,7 +73,7 @@ module.exports = require('./webpack.base.babel')({
  * will be used.
  *
  */
-function dependencyHandlers() {
+function dependencyHandlers () {
   // Don't do anything during the DLL Build step
   if (process.env.BUILDING_DLL) {
     return []

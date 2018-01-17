@@ -21,13 +21,40 @@ const ReactBoilerplate = {
        * by listing them here.
        */
       exclude: [
+        'font-awesome',
         'chalk',
         'compression',
         'cross-env',
         'express',
         'ip',
         'minimist',
-        'sanitize.css'
+        'sanitize.css',
+        'fs',
+        'tls',
+        'cors',
+        'request',
+        'tls',
+        'net',
+        'npm',
+        'node-gyp',
+        'aws-sdk',
+        'bcrypt',
+        'bcrypt-nodejs',
+        'body-parser',
+        'cors',
+        'formidable',
+        'twit',
+        'debug',
+        'email-validator',
+        'jsonwebtoken',
+        'express-jwt',
+        'socket.io',
+        'twitter',
+        'passport',
+        'passport-twitter',
+        'mongoose',
+        'mongoose-schema-formatdate',
+        'request'
       ],
 
       /**
@@ -40,7 +67,7 @@ const ReactBoilerplate = {
       path: resolve('../node_modules/react-boilerplate-dlls')
     },
 
-    entry(pkg) {
+    entry (pkg) {
       const dependencyNames = Object.keys(pkg.dependencies)
       const exclude = pkg.dllPlugin.exclude || ReactBoilerplate.dllPlugin.defaults.exclude
       const include = pkg.dllPlugin.include || ReactBoilerplate.dllPlugin.defaults.include
