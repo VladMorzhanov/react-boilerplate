@@ -8,3 +8,13 @@
 <br />
 
 <b> Forked from https://github.com/react-boilerplate/react-boilerplate </b>
+
+You can read about main fatures and how to use this boilerplate at original repository.
+
+<br />
+
+## New feature and changes in this fork
+
+1. Changed ESLint config.
+2. Added standard.js
+3. SCSS support
