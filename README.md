@@ -14,3 +14,4 @@ You can read about main fatures and how to use this boilerplate at original repo
 2. Added standard.js
 3. SCSS support
 4. More scallable express.js server
+5. React 16
