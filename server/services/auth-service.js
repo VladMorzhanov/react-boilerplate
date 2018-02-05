@@ -2,11 +2,11 @@ const User = require('../models/User')
 const jwt = require('jsonwebtoken')
 const {SALT, EC} = require('../constants')
 const CustomError = require('../error/custom-error')
-const validator = require('email-validator')
+var validator = require('validator');
 
 async function login (email, pwd) {
   // validate email
-  if (!validator.validate(email)) {
+  if (!validator.isEmail(email)) {
     throw new CustomError('Not valid email.', EC.DATA_VALIDATION_FAILED)
   }
 

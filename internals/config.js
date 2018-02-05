@@ -21,7 +21,6 @@ const ReactBoilerplate = {
        * by listing them here.
        */
       exclude: [
-        'font-awesome',
         'chalk',
         'compression',
         'cross-env',
