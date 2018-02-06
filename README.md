@@ -4,7 +4,7 @@
 
 <b> Forked from https://github.com/react-boilerplate/react-boilerplate </b>
 
-You can read about main fatures and how to use this boilerplate at original repository.
+You can read about main fatures and how to use this boilerplate at original repository. ☝️
 
 <br />
 
